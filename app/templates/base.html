@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="title"><h1>Helloworld</h1></div>
+	<div id="hmenu">
+		<ul>
+			<li><a href="{{url_for('index')}}">Home</a></li>
+			<li><a href="{{url_for('search')}}">Search</a></li>
+		</ul>
+	</div>
+	<h2>What do you want to eat today? </h2>
+	{% block content %} {% endblock %}
+</body>
+</html>
